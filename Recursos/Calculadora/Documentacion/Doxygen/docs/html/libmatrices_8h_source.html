@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MyProject: Fichero Fuente Headers/libmatrices.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MyProject
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_692516b589a32b3bfce781ca9f6d1534.html">Headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">libmatrices.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="libmatrices_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LIBMATRICES_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#define LIBMATRICES_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Autor: javiersolanop</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">int</span>** <a class="code hl_function" href="libmatrices_8h.html#a4fa7077d3cf8d3b72b2c2786c6db3f75">dimensionarMatrizDeTipoEntero</a>(<span class="keywordtype">int</span> *prmM, <span class="keywordtype">int</span> *prmN);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> <a class="code hl_function" href="libmatrices_8h.html#acefb6ece2f27e356a291f277f26f20a9">liberarDimensionMatrizDeTipoEntero</a>(<span class="keywordtype">int</span> **prmMatriz, <span class="keywordtype">int</span> *prmM);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="libmatrices_8h.html#a353f77af7b928bb30c2be699493ed0c2">llenarMatriz</a>(<span class="keywordtype">int</span> **prmMatriz, <span class="keywordtype">int</span> *prmM, <span class="keywordtype">int</span> *prmN);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> <a class="code hl_function" href="libmatrices_8h.html#ab554de3eaf4a924d982c29921e94798e">imprimirMatriz</a>(<span class="keywordtype">int</span> **prmMatriz, <span class="keywordtype">int</span> *prmM, <span class="keywordtype">int</span> *prmN);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> <a class="code hl_function" href="libmatrices_8h.html#a39127fbe5d3be789fb87af11bcbb1877">recibirElementosDeMatrizDeTipoEntero</a>(<span class="keywordtype">int</span> **prmMatriz, <span class="keywordtype">int</span> *prmM, <span class="keywordtype">int</span> *prmN);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> <a class="code hl_function" href="libmatrices_8h.html#a7a1d70902b8dfa7cc45f2f21fa6d86dd">sumarMatricesDeTipoEntero</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> <a class="code hl_function" href="libmatrices_8h.html#ac641a2035f7309d5a24cd75976e9324b">multiplicarMatricesDeTipoEntero</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> <a class="code hl_function" href="libmatrices_8h.html#ab7e95fd332aea220ee0e8915164bd713">multiplicarEscalarTipoEnteroPorMatrizTipoEntero</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="alibmatrices_8h_html_a353f77af7b928bb30c2be699493ed0c2"><div class="ttname"><a href="libmatrices_8h.html#a353f77af7b928bb30c2be699493ed0c2">llenarMatriz</a></div><div class="ttdeci">void llenarMatriz(int **prmMatriz, int *prmM, int *prmN)</div><div class="ttdoc">Funcion para realizar el llenado de elementos. Los recibe por consola.</div><div class="ttdef"><b>Definition:</b> libmatrices.c:22</div></div>
+<div class="ttc" id="alibmatrices_8h_html_a39127fbe5d3be789fb87af11bcbb1877"><div class="ttname"><a href="libmatrices_8h.html#a39127fbe5d3be789fb87af11bcbb1877">recibirElementosDeMatrizDeTipoEntero</a></div><div class="ttdeci">void recibirElementosDeMatrizDeTipoEntero(int **prmMatriz, int *prmM, int *prmN)</div><div class="ttdoc">Funcion para recibir los elementos por consola. Despues imprime la matriz obtenida.</div><div class="ttdef"><b>Definition:</b> libmatrices.c:74</div></div>
+<div class="ttc" id="alibmatrices_8h_html_a4fa7077d3cf8d3b72b2c2786c6db3f75"><div class="ttname"><a href="libmatrices_8h.html#a4fa7077d3cf8d3b72b2c2786c6db3f75">dimensionarMatrizDeTipoEntero</a></div><div class="ttdeci">int ** dimensionarMatrizDeTipoEntero(int *prmM, int *prmN)</div><div class="ttdoc">Funcion para dimensionar una matriz de tipo 'int'.</div><div class="ttdef"><b>Definition:</b> libmatrices.c:4</div></div>
+<div class="ttc" id="alibmatrices_8h_html_a7a1d70902b8dfa7cc45f2f21fa6d86dd"><div class="ttname"><a href="libmatrices_8h.html#a7a1d70902b8dfa7cc45f2f21fa6d86dd">sumarMatricesDeTipoEntero</a></div><div class="ttdeci">void sumarMatricesDeTipoEntero()</div><div class="ttdoc">Funcion para sumar los elementos de dos matrices, empleando conceptos de 'Algebra lineal'....</div><div class="ttdef"><b>Definition:</b> libmatrices.c:80</div></div>
+<div class="ttc" id="alibmatrices_8h_html_ab554de3eaf4a924d982c29921e94798e"><div class="ttname"><a href="libmatrices_8h.html#ab554de3eaf4a924d982c29921e94798e">imprimirMatriz</a></div><div class="ttdeci">void imprimirMatriz(int **prmMatriz, int *prmM, int *prmN)</div><div class="ttdoc">Funcion para imprimir en consola los elementos.</div><div class="ttdef"><b>Definition:</b> libmatrices.c:46</div></div>
+<div class="ttc" id="alibmatrices_8h_html_ab7e95fd332aea220ee0e8915164bd713"><div class="ttname"><a href="libmatrices_8h.html#ab7e95fd332aea220ee0e8915164bd713">multiplicarEscalarTipoEnteroPorMatrizTipoEntero</a></div><div class="ttdeci">void multiplicarEscalarTipoEnteroPorMatrizTipoEntero()</div><div class="ttdoc">Funcion para multiplicar cada elemento por un escalar, empleando conceptos de 'Algebra lineal'....</div><div class="ttdef"><b>Definition:</b> libmatrices.c:182</div></div>
+<div class="ttc" id="alibmatrices_8h_html_ac641a2035f7309d5a24cd75976e9324b"><div class="ttname"><a href="libmatrices_8h.html#ac641a2035f7309d5a24cd75976e9324b">multiplicarMatricesDeTipoEntero</a></div><div class="ttdeci">void multiplicarMatricesDeTipoEntero()</div><div class="ttdoc">Funcion para multiplicar los elementos de dos matrices, empleando conceptos de 'Algebra lineal'....</div><div class="ttdef"><b>Definition:</b> libmatrices.c:123</div></div>
+<div class="ttc" id="alibmatrices_8h_html_acefb6ece2f27e356a291f277f26f20a9"><div class="ttname"><a href="libmatrices_8h.html#acefb6ece2f27e356a291f277f26f20a9">liberarDimensionMatrizDeTipoEntero</a></div><div class="ttdeci">void liberarDimensionMatrizDeTipoEntero(int **prmMatriz, int *prmM)</div><div class="ttdoc">Funcion para liberar el espacio en memoria de una matriz.</div><div class="ttdef"><b>Definition:</b> libmatrices.c:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
