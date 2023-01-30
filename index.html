@@ -71,14 +71,14 @@
         }
         article .seccion-izquierda ul li {
             width: 100%;
-            height: 30%;
+            height: 20%;
             list-style: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         article .seccion-izquierda ul li .imagen {
-            width: 20%;
+            width: 15%;
             height: 100%;
             background-color: #b3231c;
             display: flex;
@@ -97,6 +97,18 @@
             align-items: center;
             font-size: 150%;
             color: #2d99ca;
+        }
+        article .seccion-izquierda ul li button {
+            width: 76%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 140%;
+            color: #2d99ca;
+            cursor: pointer;
+            text-decoration:underline;
+            background-color: transparent;
+            border: none;
         }
         article .seccion-derecha {
             width: 50%;
@@ -125,7 +137,7 @@
     <article>
         <section class="seccion-izquierda">
             <p>Lista de opciones:</p>
-            <ul>
+            <ul id="body">
                 <li>
                     <div class="imagen">
                         <img src="./Recursos/documentacion.png" alt="Documentacion">
@@ -140,15 +152,29 @@
                 </li>
                 <li>
                     <div class="imagen">
+                        <img src="./Recursos/video.png" alt="Ejecutable">
+                    </div>
+                    <button onclick="correrVideo()">Ver video demostracion</button>
+                </li>
+                <li>
+                    <div class="imagen">
                         <img src="./Recursos/ejecutable.png" alt="Ejecutable">
                     </div>
-                    <a href="./Recursos/Calculadora/Calculadora.exe" title="Descargar la aplicacion" download="Calculadora.exe">Descargar ejecutable</a>
+                    <a href="./Recursos/Calculadora/Calculadora.exe" title="Descargar la aplicacion" download="Calculadora">Descargar ejecutable</a>
                 </li>
             </ul>
         </section>
         <section class="seccion-derecha">
-            <video src="./Recursos/Calculadora/Calculadora.mp4" autoplay loop></video>
+            <video id="video" src="./Recursos/Calculadora/Video-Calculadora.mp4" autoplay loop></video>
         </section>
     </article>
+    <script>
+
+        function correrVideo(){
+            var objVideo = document.getElementById('video');
+            objVideo.play();
+        }
+
+    </script>
 </body>
 </html>
