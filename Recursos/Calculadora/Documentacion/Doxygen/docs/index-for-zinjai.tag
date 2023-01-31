@@ -142,24 +142,29 @@
       <anchor>ab9c29c3df94b3c557cd3049cccf7be94</anchor>
       <arglist>(int *prmTamanio)</arglist>
     </member>
+  </compound>
+  <compound kind="file">
+    <name>libArreglosEnteros.h</name>
+    <path>Headers/</path>
+    <filename>lib_arreglos_enteros_8h.html</filename>
     <member kind="function">
       <type>int *</type>
       <name>dimensionarArregloEntero</name>
-      <anchorfile>libarreglos_8h.html</anchorfile>
+      <anchorfile>lib_arreglos_enteros_8h.html</anchorfile>
       <anchor>a0e047d27986f3f8dd8c958db66e7b7cf</anchor>
       <arglist>(int prmTamanio)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>obtenerTamanioArregloEntero</name>
-      <anchorfile>libarreglos_8h.html</anchorfile>
+      <anchorfile>lib_arreglos_enteros_8h.html</anchorfile>
       <anchor>a4bf0722066c3e32a937ae998332e3eac</anchor>
       <arglist>(int *prmArreglo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>liberarDimensionArregloEntero</name>
-      <anchorfile>libarreglos_8h.html</anchorfile>
+      <anchorfile>lib_arreglos_enteros_8h.html</anchorfile>
       <anchor>a08e5514343855a4485a0fd123f0ed242</anchor>
       <arglist>(int *prmArreglo)</arglist>
     </member>
@@ -776,6 +781,53 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>libseries.h</name>
+    <path>Headers/</path>
+    <filename>libseries_8h.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>LIBASERIES_H</name>
+      <anchorfile>libseries_8h.html</anchorfile>
+      <anchor>ac708f8e306ff84ba618013517ba81551</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirResultadoSeries</name>
+      <anchorfile>libseries_8h.html</anchorfile>
+      <anchor>a8a1eacb8abded881f3d832f165e439d6</anchor>
+      <arglist>(double *prmResultado)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirFibonacci</name>
+      <anchorfile>libseries_8h.html</anchorfile>
+      <anchor>adb0c6e90d36c7562c1375b3fe7a708fe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirNumerosPrimos</name>
+      <anchorfile>libseries_8h.html</anchorfile>
+      <anchor>a172dbf26945d37e484012a68740e7981</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirNumerosPares</name>
+      <anchorfile>libseries_8h.html</anchorfile>
+      <anchor>a89aadca1589ebfaab671d0fcfa6efbc2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirNumerosImpares</name>
+      <anchorfile>libseries_8h.html</anchorfile>
+      <anchor>a728d4096d4309537e78a8be6475554e5</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>libaritmetica.c</name>
     <path>Sources/Librerias/</path>
     <filename>libaritmetica_8c.html</filename>
@@ -912,24 +964,30 @@
       <anchor>ab9c29c3df94b3c557cd3049cccf7be94</anchor>
       <arglist>(int *prmTamanio)</arglist>
     </member>
+  </compound>
+  <compound kind="file">
+    <name>libArreglosEnteros.c</name>
+    <path>Sources/Librerias/</path>
+    <filename>lib_arreglos_enteros_8c.html</filename>
+    <includes id="lib_arreglos_enteros_8h" name="libArreglosEnteros.h" local="yes" imported="no">../../Headers/libArreglosEnteros.h</includes>
     <member kind="function">
       <type>int *</type>
       <name>dimensionarArregloEntero</name>
-      <anchorfile>libarreglos_8c.html</anchorfile>
+      <anchorfile>lib_arreglos_enteros_8c.html</anchorfile>
       <anchor>a0e047d27986f3f8dd8c958db66e7b7cf</anchor>
       <arglist>(int prmTamanio)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>obtenerTamanioArregloEntero</name>
-      <anchorfile>libarreglos_8c.html</anchorfile>
+      <anchorfile>lib_arreglos_enteros_8c.html</anchorfile>
       <anchor>a4bf0722066c3e32a937ae998332e3eac</anchor>
       <arglist>(int *prmArreglo)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>liberarDimensionArregloEntero</name>
-      <anchorfile>libarreglos_8c.html</anchorfile>
+      <anchorfile>lib_arreglos_enteros_8c.html</anchorfile>
       <anchor>a08e5514343855a4485a0fd123f0ed242</anchor>
       <arglist>(int *prmArreglo)</arglist>
     </member>
@@ -939,7 +997,7 @@
     <path>Sources/Librerias/</path>
     <filename>libcadena_8c.html</filename>
     <includes id="libcadena_8h" name="libcadena.h" local="yes" imported="no">../../Headers/libcadena.h</includes>
-    <includes id="libarreglos_8c" name="libarreglos.c" local="yes" imported="no">./libarreglos.c</includes>
+    <includes id="lib_arreglos_enteros_8c" name="libArreglosEnteros.c" local="yes" imported="no">./libArreglosEnteros.c</includes>
     <member kind="function">
       <type>char *</type>
       <name>dimensionarApuntadorCadena</name>
@@ -1604,6 +1662,47 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>libseries.c</name>
+    <path>Sources/Librerias/</path>
+    <filename>libseries_8c.html</filename>
+    <includes id="libseries_8h" name="libseries.h" local="yes" imported="no">../../Headers/libseries.h</includes>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirResultadoSeries</name>
+      <anchorfile>libseries_8c.html</anchorfile>
+      <anchor>a8a1eacb8abded881f3d832f165e439d6</anchor>
+      <arglist>(double *prmResultado)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirFibonacci</name>
+      <anchorfile>libseries_8c.html</anchorfile>
+      <anchor>adb0c6e90d36c7562c1375b3fe7a708fe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirNumerosPrimos</name>
+      <anchorfile>libseries_8c.html</anchorfile>
+      <anchor>a172dbf26945d37e484012a68740e7981</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirNumerosPares</name>
+      <anchorfile>libseries_8c.html</anchorfile>
+      <anchor>a89aadca1589ebfaab671d0fcfa6efbc2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>imprimirNumerosImpares</name>
+      <anchorfile>libseries_8c.html</anchorfile>
+      <anchor>a728d4096d4309537e78a8be6475554e5</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>main.c</name>
     <path>Sources/</path>
     <filename>main_8c.html</filename>
@@ -1669,6 +1768,7 @@
     <path>Sources/OpcionesMenuPrincipal/</path>
     <filename>_opcion_arreglos_8c.html</filename>
     <includes id="libmenuarreglos_8c" name="libmenuarreglos.c" local="yes" imported="no">../Librerias/libmenuarreglos.c</includes>
+    <includes id="libarreglos_8c" name="libarreglos.c" local="yes" imported="no">../Librerias/libarreglos.c</includes>
     <member kind="function">
       <type>void</type>
       <name>realizarOpcionArreglos</name>
@@ -1738,6 +1838,7 @@
     <path>Sources/OpcionesMenuPrincipal/</path>
     <filename>_opcion_series_8c.html</filename>
     <includes id="libmenuseries_8c" name="libmenuseries.c" local="yes" imported="no">../Librerias/libmenuseries.c</includes>
+    <includes id="libseries_8c" name="libseries.c" local="yes" imported="no">../Librerias/libseries.c</includes>
     <member kind="function">
       <type>void</type>
       <name>realizarOpcionSeries</name>
